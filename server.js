@@ -4,8 +4,8 @@ server.listen(9093, "127.0.0.1");
 server.on("listening", () => console.log(`Server linstening on port 9093...`));
 
 const midtransClient = require("midtrans-client");
-const SERVER_kEY = process.env.SERVER_kEY || "your server key midtrans";
-const CLIENT_kEY = process.env.CLIENT_kEY || "your client key midtrans";
+const SERVER_kEY = process.env.SERVER_KEY || "your server key midtrans";
+const CLIENT_kEY = process.env.CLIENT_KEY || "your client key midtrans";
 // Create Core API instance
 let coreApi = new midtransClient.CoreApi({
   isProduction: false,
